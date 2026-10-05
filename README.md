@@ -57,6 +57,20 @@ notebooks/04_comparative_framework_us_uk_eu.ipynb
 Run them in order. Notebooks 01–03 each save a CSV under `outputs/`; notebook 04
 reads all three and builds the cross-region comparison.
 
+## Canonical ONS weekly-pay input
+
+The UK wage analysis uses the canonical ONS **Gross median weekly pay** snapshot
+from `DiogoRibeiro7/data`.
+
+The notebook pins:
+
+- registry commit: `886278edfd3948494378e4d4b1aead42f66b92d6`
+- canonical path: `datasets/ons-gross-median-weekly-pay/raw/gross-median-weekly-pay.csv`
+- SHA-256: `285a76982afdfd38e9366535b43bf3e68c878ada7b819d722d2ec188c38eff17`
+
+The file checksum is verified before loading. The separate ONS housing-affordability
+input remains upstream-managed and is outside this migration.
+
 ## Data design
 
 ### United States
